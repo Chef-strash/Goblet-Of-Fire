@@ -125,4 +125,5 @@ This blend of rewards and penalties helped the agent **balance exploration**, **
 - During training, reward and step plots are generated and saved (`training_summary_plot.png`).
 - An Evaluation Metric is embedded in the `train_harry` function to Count the Number of Generations it took for the Modle to Win 10 Consequitive times.
 - Additionally a Total Win count is added out the total number of episodes to judge the Success of the Learned Policy.
+![Training Summary](Training Summary.png)
 
