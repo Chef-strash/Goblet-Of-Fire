@@ -39,7 +39,11 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 - How to see Harry in Action
   - Harry can be see in action in the rendered environment with the Help of **GOF_auto_play.py**, guided by the Learned Policy from the Q Table.
 ---
-
+## How to Train and Test the Model
+1. Open `harry_q_learner.py` and run the Script. The script returns a `pickle file` which contains the trained weights(q values) and saves the plots generate during Training. The Script also prints Training Summary.
+2. The name of the Q-table can be changed by navigation to the `train_harry` function in the same script.
+3. Open `GOF_auto_play.py` and change the name of the Q_table 
+---
 ## 🔍 Approach
 
 The problem is broken down into three major components:
@@ -73,10 +77,10 @@ A class called `QlearningAgent` is created to encapsulate all learning behavior.
 
 #### 🎲 Exploration Strategy
 
-Each time the agent must act, it decides between **exploration and exploitation** using an ε-greedy strategy:
+Each time the agent must act, it decides between **exploration and exploitation** using an **ε-greedy strategy**:
 - With a decreasing ε over time, Harry starts out exploring more and gradually begins to **rely on what he's learned**.
-- exploration_rate = exploration_start - (exploration_start - exploration_end) * (current_episode / num_episodes)
-- `get_exploration_rate()` returns a linearly decaying exploration rate.
+- exploration_rate = exploration_start - (exploration_start - exploration_end) * exp(-current_episode / num_episodes)
+- `get_exploration_rate()` returns a exponentially decaying exploration rate.
 - `get_valid_actions()` either selects a random move (exploration) or chooses the highest Q-value move from the Q-table (exploitation).
 
 #### 📈 Learning Mechanism
