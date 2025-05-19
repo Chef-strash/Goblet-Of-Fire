@@ -35,7 +35,7 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 - Both characters spawn randomly on valid positions at the start of each episode.
 - When the Death Eater is within **3 blocks**, Harry can "sense" its presence, even if obstructed by walls.
 - How to see Harry in Action
-  - Harry can be see in action inthe rendered environment with the Help of **GOF_auto_play.py**, quided by the Learned Policy from the Q Table.
+  - Harry can be see in action in the rendered environment with the Help of **GOF_auto_play.py**, guided by the Learned Policy from the Q Table.
 ---
 
 ## 🔍 Approach
