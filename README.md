@@ -109,7 +109,7 @@ A fine-tuned **reward function** was key to teaching Harry effective strategies 
 
 | Scenario                            | Reward     | Purpose                                              |
 |-------------------------------------|------------|------------------------------------------------------|
-| Reaches the Cup                     | `+100/(dist+1)` | Encourages getting closer to goal; scales with distance |
+| Reaches the Cup                     | `+100` | Encourages getting closer to goal. |
 | Gets caught by Death Eater          | `-40`      | Strong penalty for failure                          |
 | Tries to walk into wall or stays    | `-5`       | Discourages invalid moves                           |
 | Valid step in any direction         | `+2`       | Encourages movement and exploration                 |
