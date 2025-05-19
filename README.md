@@ -122,6 +122,6 @@ This blend of rewards and penalties helped the agent **balance exploration**, **
 
 ## 📊 Performance Monitoring
 
-- During training, reward and step plots are generated and saved (`training_plot6c.png`).
+- During training, reward and step plots are generated and saved (`training_summary_plot.png`).
 - Evaluation is performed using `evaluate_Harry()` to check when Harry achieves a **10-win streak** and to measure his **longest survival streak**.
 
