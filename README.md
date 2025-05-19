@@ -15,8 +15,10 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 | `GOF_auto_play.py`         | Rendered game environment played with the help of the trained Q-table       |
 | `GOF_manuel_play.py`       | Game environment for manual play (user-controlled Harry)                    |
 | `harry_q_learner.py`       | Implementation of the Q-Learning algorithm                                  |
-| `Qc3_table.pkl`            | Saved Q-table after training (used for evaluation and auto-play)            |
-| `training_plot3c.png`      | Plot of rewards and steps taken per episode during training                 |
+| `Qc3_table.pkl`            | Saved Q-table after training             |
+| `Qcfinal_table.pkl`        | Final Q-table used in the GOF_auto_play.py
+| `training_summary_plot.png`      | Plot of rewards and steps taken per episode during training                 |
+| `Training_Summar.png`      | Image showing of Models Performance                                         |
 | `README.md`                | This documentation file                                                     |
 
 
@@ -124,6 +126,7 @@ This blend of rewards and penalties helped the agent **balance exploration**, **
 
 - During training, reward and step plots are generated and saved (`training_summary_plot.png`).
 - An Evaluation Metric is embedded in the `train_harry` function to Count the Number of Generations it took for the Modle to Win 10 Consequitive times.
+- Maximum Winning streak of the Model is also added to judge it's performance.
 - Additionally a Total Win count is added out the total number of episodes to judge the Success of the Learned Policy.
-![Training Summary](Training Summary.png)
+![Training Summary](Training_Summary.png)
 
