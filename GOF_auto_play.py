@@ -116,16 +116,16 @@ while running:
                 dx, dy= [(-1, 0), (1, 0), (0, -1), (0, 1)][best_action]
                 harry_pos= (x + dx, y + dy)
 
-        # Check win condition
-        if harry_pos==cup_pos:
-            game_over= True
-            win= True
-
         # Death Eater move (BFS)
         path= bfs(death_eater_pos, harry_pos)
         if path and len(path)>1:
             death_eater_pos= path[1]
-
+            
+        # Check win condition
+        if harry_pos==cup_pos:
+            game_over= True
+            win= True
+            
         # Check lose condition
         if harry_pos==death_eater_pos:
             game_over= True
