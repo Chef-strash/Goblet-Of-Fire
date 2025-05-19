@@ -4,7 +4,7 @@
 
 This repository is a submission for the **Secretary Recruitment Task'25** of the **Brain and Cognetive Science Club, SnT**.
 
-This particular challenge is titled **"Goblet of Fire"** — where the goal is to train an agent (Harry Potter) to find the **Triwizard Cup** in a maze-like environment while avoiding capture by a pursuing **Death Eater**.
+This particular challenge is titled **"Goblet of Fire"** — where the goal is to train an agent (Harry Potter) to find the **Triwizard Cup** in a maze-like environment while avoiding being capture by a pursuing **Death Eater**.
 
 ---
 
