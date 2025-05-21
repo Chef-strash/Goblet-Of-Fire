@@ -15,7 +15,7 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 | `GOF_auto_play.py`         | Rendered game environment played with the help of the trained Q-table       |
 | `GOF_manuel_play.py`       | Game environment for manual play (user-controlled Harry)                    |
 | `harry_q_learner.py`       | Implementation of the Q-Learning algorithm                                  |
-| `Qc3_table.pkl`            | Saved Q-table after training             |
+| `Qc3_table.pkl`            | (This file can be ignored            |
 | `Qcfinal_table.pkl`        | Final Q-table used in the GOF_auto_play.py
 | `training_summary_plot.png`      | Plot of rewards and steps taken per episode during training                 |
 | `Training_Summar.png`      | Image showing of Models Performance                                         |
