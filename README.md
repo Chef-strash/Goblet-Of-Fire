@@ -12,15 +12,17 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 
 | **File**                   | **Purpose**                                                                 |
 |---------------------------|------------------------------------------------------------------------------|
+| `run_task.py`              | This Script runs *harry_q_learner* and *GOF_auto_play.py*. 
 | `GOF_auto_play.py`         | Rendered game environment played with the help of the trained Q-table       |
 | `GOF_manuel_play.py`       | Game environment for manual play (user-controlled Harry)                    |
 | `harry_q_learner.py`       | Implementation of the Q-Learning algorithm                                  |
-| `Qc3_table.pkl`            | (This file can be ignored            |
-| `Qcfinal_table.pkl`        | Final Q-table used in the GOF_auto_play.py
-| `training_summary_plot.png`      | Plot of rewards and steps taken per episode during training                 |
+| `Qc3_table.pkl`            | (This file can be ignored)                                                  |
+| `Qcfinal_table.pkl`        | Final Q-table used in the GOF_auto_play.py                                  |
+| `Qe_1table.pkl`            | Final Q-table for Brownie task                                              |
+| `Brownie_task.py`          | This script tests the algorithm on some extra added complexity              | 
+| `training_summary_plot.png`      | Plot of rewards and steps taken per episode during training           |
 | `Training_Summar.png`      | Image showing of Models Performance                                         |
 | `README.md`                | This documentation file                                                     |
-
 
 ---
 
@@ -40,9 +42,8 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
   - Harry can be see in action in the rendered environment with the Help of **GOF_auto_play.py**, guided by the Learned Policy from the Q Table.
 ---
 ## How to Train and Test the Model
-1. Open `harry_q_learner.py` and run the Script. The script returns a `pickle file` which contains the trained weights(q values) and saves the plots generate during Training. The Script also prints Training Summary.
-2. The name of the Q-table can be changed by navigation to the `train_harry` function in the same script.
-3. Open `GOF_auto_play.py` and change the name of the Q_table 
+1. To tarin the model the script **run_task.py** needs to be run. It will train the model and generate the Q-table, along with that it will print the training summary and save plot of tarining data.
+2. To run the Brownie task the script **Brownie_task.py** needs to be run. It will Train the model for generate the Q-table and print the training summary.
 ---
 ## 🔍 Approach
 
@@ -132,5 +133,6 @@ This blend of rewards and penalties helped the agent **balance exploration**, **
 - An Evaluation Metric is embedded in the `train_harry` function to Count the Number of Generations it took for the Modle to Win 10 Consequitive times.
 - Maximum Winning streak of the Model is also added to judge it's performance.
 - Additionally a Total Win count is added out the total number of episodes to judge the Success of the Learned Policy.
+  
 ![Training Summary](Training_Summary.png)
 
