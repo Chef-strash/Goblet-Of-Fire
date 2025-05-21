@@ -45,7 +45,7 @@ This particular challenge is titled **"Goblet of Fire"** — where the goal is t
 1. To tarin the model the script **run_task.py** needs to be run. It will train the model and generate the Q-table, along with that it will print the training summary and save plot of tarining data.
 2. To run the Brownie task the script **Brownie_task.py** needs to be run. It will Train the model for generate the Q-table and print the training summary.
 ---
-# Deatails of Brownie-task 
+# Details of Brownie-task 
 - Size of the Maze is  15X10.
 - 2 Death Eaters have be added that constantly persuit Harry.
 - Harry has an advantage, he can use the Spell "Expecto Patronum", it stunns the deatheaters in a certain range with a probablity of **60%**.
